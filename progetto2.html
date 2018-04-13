@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<script type="text/javascript">
+function funzioneLogin()
+{
+    var nome=document.forms["formDati"]["nome"].value;
+    var cognome=document.forms["formDati"]["cognome"].value;
+    var username=document.forms["formDati"]["username"].value;
+    var password=document.forms["formDati"]["password"].value;
+    if(username=='admin' && password=='alternanza73')
+    document.write("Benvenuto " + nome);
+    else
+    document.write("Utente non autorizzato");
+}
+</script>
+</head>
+
+<body>
+
+<form id="formDati" action="" method="" >
+Nome <input name="nome" type="text"/>
+<br>
+<br>
+Cognome <input name="cognome" type="text"/>
+<br>
+<br>
+Username <input name="username" type="text"/>
+<br>
+<br>
+Password <input name="password" type="text"/>
+<input type="button" value="Login" onclick="funzioneLogin()"/>
+
+
+</form>
+
+</body>
+</html>
